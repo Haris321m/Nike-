@@ -1,0 +1,190 @@
+*{
+
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+
+    background: rgb(20, 20, 20);
+    font-family: sans-serif;
+
+}
+
+.nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+
+}
+
+.nav .logo{
+
+    background: linear-gradient(90deg, rgb(0, 216, 0), rgb(229, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.nav .logo h1:hover{
+
+    cursor: pointer;
+
+}
+
+.nav .ul{
+
+    display: flex;
+
+}
+
+.nav .ul li{
+
+    margin-left: 10px;
+    padding: 10px 30px;
+    list-style: none;
+
+}
+
+.nav .ul li a{
+
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+
+}
+
+.nav .ul li a:hover{
+
+    cursor: pointer;
+    color: rgb(0, 255, 179);
+
+}
+
+.nav .menu h1{
+
+    color: rgb(0, 255, 179);
+    transition: 0.5s;
+
+}
+.nav .menu h1:hover{
+
+    color: rgb(0, 255, 179);
+    cursor: pointer;
+    transform: rotateZ(180deg);
+
+}
+
+/* body */
+
+.body{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+
+}
+
+.body .bg-text{
+
+    position: absolute;
+    z-index: -1;
+    font-style: italic;
+    font-size: 20em;
+    margin-left: 270px;
+    color: rgba(83, 83, 83, 0.459);
+
+}
+
+.body .left h1 {
+    font-size: 6em;
+    font-family: sans-serif;
+    background: linear-gradient(90deg, rgb(0, 216, 0), rgb(229, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.body .left h2{
+
+    font-size: 4em;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: white;
+
+}
+
+.body .left p{
+
+    font-family: sans-serif;
+    color: white;
+
+}
+
+
+.body .middle img{
+
+    width: 500px;
+    position: relative;
+    animation: animate 4s infinite alternate;
+
+}
+
+@keyframes animate {
+    
+    0%{
+        top: 0;
+    }
+    100%{
+
+        top: 30px;
+
+    }
+
+}
+
+
+.body .right h1{
+
+    color: white;
+    font-size: 3em;
+    font-weight: 400;
+
+}
+.body .right h2{
+
+    color: rgb(0, 255, 255);
+    font-size: 3em;
+    font-weight: 400;
+
+}
+
+.body .right .icons{
+
+    display: flex;
+    position: relative;
+    top: 140px;
+    font-size: 2em;
+
+}
+
+.body .right .icons li{
+
+    list-style: none;
+    margin-left: 30px;
+    color: rgb(0, 255, 255);
+    transition: 0.3s;
+
+}
+
+.body .right .icons li:hover{
+
+    cursor: pointer;
+    color: rgb(0, 190, 190);
+
+}
